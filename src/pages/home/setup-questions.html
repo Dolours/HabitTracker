@@ -1,0 +1,68 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Set Habits
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content">
+
+  <ion-card (tap)="tapEvent($event)">
+    <ion-item>
+      Wakeup Settings:
+    </ion-item>
+  </ion-card>
+
+  <ion-list>
+      <ion-item>
+      <ion-label>Wakeup Time</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Start Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>End Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Ends</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
+    </ion-item>
+  </ion-list>
+   <ion-card (press)="pressEvent($event)">
+    <ion-item>
+      Excercise Settings:
+    </ion-item>
+  </ion-card>
+  <ion-list>
+      <ion-item>
+      <ion-label>Wakeup Time</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Start Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>End Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Ends</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+ 
+     <button (click)="goToDayInfo('wakeup')"  color="light" full="" ion-button="" ng-reflect-color="light" ng-reflect-full="" class="button button-md button-default button-default-md button-full button-full-md button-md-dark"><span class="button-inner">Confirm</span><div class="button-effect"></div></button>
+
+
+</ion-content>
+
+

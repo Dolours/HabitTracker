@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title align="center">
+      Habit Tracker
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <ion-list >
+    <ion-item >
+      <ion-thumbnail item-start>
+        <img src="assets/icon/wakeupIcon.png">
+     
+      </ion-thumbnail>
+    
+            
+              <ion-label>Wakeup</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      
+    </ion-item>
+
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/excercise-icon.png">
+      </ion-thumbnail>
+              <ion-label>Exersise</ion-label>
+  <ion-checkbox color="dark" checked="false"></ion-checkbox>
+    
+    </ion-item>
+      </ion-list>
+
+        <button (click)="openNavDetailsPage('wakeup')"  color="light" full="" ion-button="" ng-reflect-color="light" ng-reflect-full="" class="button button-md button-default button-default-md button-full button-full-md button-md-dark"><span class="button-inner">Continue</span><div class="button-effect"></div></button>
+
+
+ 
+</ion-content>
